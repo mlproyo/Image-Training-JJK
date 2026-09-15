@@ -1,10 +1,10 @@
-# Domain Expansion — Hand Gesture Recognition 🖐️
+# Domain Expansion: Hand Gesture Recognition 
 
 A real-time computer vision project that detects hand gestures via webcam and triggers Jujutsu Kaisen **Domain Expansion** effects — matching hand signs to Gojo's *Infinite Void*, Sukuna's *Malevolent Shrine*, and *Mahoraga* — complete with sound effects and screen tint overlays.
 
 Built with **OpenCV**, **cvzone**, and a **Teachable Machine**–trained Keras classifier.
 
-## ✨ Features
+##  Features
 
 - Real-time hand tracking with a drawn skeleton overlay for up to 2 hands
 - Two separate classifiers:
@@ -14,11 +14,11 @@ Built with **OpenCV**, **cvzone**, and a **Teachable Machine**–trained Keras c
 - Full-screen color tint effect once a domain is confirmed
 - Matching audio playback for each confirmed domain
 
-## 🎥 Demo
+##  Demo
 
 *(Add a GIF or screen recording here showing the gestures and effects in action)*
 
-## 🧰 Requirements
+##  Requirements
 
 - Python 3.x
 - [OpenCV](https://pypi.org/project/opencv-python/)
@@ -28,7 +28,7 @@ Built with **OpenCV**, **cvzone**, and a **Teachable Machine**–trained Keras c
 
 All dependencies are listed in `requirements.txt`.
 
-## 🚀 Setup & Installation
+##  Setup & Installation
 
 1. **Clone the repository**
    ```bash
@@ -51,7 +51,7 @@ All dependencies are listed in `requirements.txt`.
    pip install -r requirements.txt
    ```
 
-## ▶️ Usage
+##  Usage
 
 Run the main script:
 
@@ -64,7 +64,7 @@ python test.py
 - Hold the gesture steady for **2 seconds** to confirm the domain.
 - Press **`q`** to quit the application.
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── test.py                # Main application script
@@ -81,7 +81,7 @@ python test.py
     └── Mahoraga Audio.mp3
 ```
 
-## ⚙️ How It Works
+##  How It Works
 
 1. **Hand detection** — `cvzone`'s `HandDetector` locates up to two hands per frame and returns their landmarks.
 2. **Preprocessing** — The detected hand region is cropped, centered, and resized onto a fixed 300x300 white canvas (`imgWhite`) to normalize input for the classifier.
@@ -89,17 +89,12 @@ python test.py
 4. **Confirmation** — A gesture must be held consistently for **2 seconds** before it's considered "confirmed," reducing false triggers.
 5. **Effects** — Once confirmed, matching audio plays and, after a short delay, a colored tint is overlaid on the video feed to simulate the domain's visual effect.
 
-## 📝 Notes
+##  Notes
 
 - The *Mahoraga* gesture was originally trained as "Idle Death Gamble," but was renamed since no matching audio existed for that domain at the time this project was built.
 - Detection and tracking confidence thresholds are tuned relatively low (`0.3`) for smoother real-time performance — feel free to adjust in `HandDetector(...)` for your setup.
 
-## 📜 License
-
-*(Add your license here, e.g. MIT)*
-
-## 🙏 Credits
-
+##  Credits
 - Hand tracking powered by [cvzone](https://github.com/cvzone/cvzone)
 - Gesture classification trained with [Teachable Machine](https://teachablemachine.withgoogle.com/)
 - Inspired by *Jujutsu Kaisen*
