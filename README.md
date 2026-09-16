@@ -1,3 +1,5 @@
+# **Disclaimer:** This project was built by following [this tutorial](https://youtu.be/wa2ARoUUdU8?si=NqU6-fDXEX80LMME) for the base hand-tracking and gesture classification setup. On top of the original, I added the color tint effect on confirmation, the sound effect playback, and support for two-hand gestures (the original only handled a single hand).
+
 # Domain Expansion: Hand Gesture Recognition 
 
 A real-time computer vision project that detects hand gestures via webcam and triggers Jujutsu Kaisen **Domain Expansion** effects — matching hand signs to Gojo's *Infinite Void*, Sukuna's *Malevolent Shrine*, and *Mahoraga* (this one is called Idle Death Gamble in the code, the Hakari expansion didn't work but I kept the name and switched to Mahoraga) — complete with sound effects and screen tint overlays.
