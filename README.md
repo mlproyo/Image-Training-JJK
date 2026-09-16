@@ -1,6 +1,6 @@
 # Domain Expansion: Hand Gesture Recognition 
 
-A real-time computer vision project that detects hand gestures via webcam and triggers Jujutsu Kaisen **Domain Expansion** effects — matching hand signs to Gojo's *Infinite Void*, Sukuna's *Malevolent Shrine*, and *Mahoraga* — complete with sound effects and screen tint overlays.
+A real-time computer vision project that detects hand gestures via webcam and triggers Jujutsu Kaisen **Domain Expansion** effects — matching hand signs to Gojo's *Infinite Void*, Sukuna's *Malevolent Shrine*, and *Mahoraga* (this one is called Idle Death Gamble in the code, the Hakari expansion didn't work but i kept the name and switched to Mahoraga) — complete with sound effects and screen tint overlays.
 
 Built with **OpenCV**, **cvzone**, and a **Teachable Machine**–trained Keras classifier.
 
